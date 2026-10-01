@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diodo PIN & Fotodiodo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono&display=swap" rel="stylesheet" />
+  <script>
+    // aplica o tema antes da pintura para não piscar
+    try {
+      const t = localStorage.getItem('theme');
+      document.documentElement.dataset.theme = t || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    } catch { document.documentElement.dataset.theme = 'light'; }
+  </script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="tb-id"><span class="tb-icon" id="tb-icon" aria-hidden="true"></span><strong id="tb-name">Diodos</strong></div>
+    <p class="eyebrow">Infográfico interativo · Eletrônica</p>
+    <div class="tb-actions">
+      <nav class="switch" aria-label="Escolher diodo">
+        <button data-dev="pin" class="active">Diodo PIN</button>
+        <button data-dev="foto">Fotodiodo</button>
+      </nav>
+      <button class="theme-btn" id="theme-btn" type="button"></button>
+    </div>
+  </header>
+  <header class="hero">
+    <p class="hero-kicker">Semicondutores · Junção PN</p>
+    <h1><span class="pin">Diodo PIN</span> <span class="amp">&amp;</span> <span class="foto">Fotodiodo</span></h1>
+    <p class="hero-lead">Como uma camada de silício sem dopagem transformou o diodo comum em chave de RF e em detector de luz — estrutura, curvas, datasheets e aplicações, de forma interativa.</p>
+    <section class="tl" id="tl" aria-label="Linha do tempo"></section>
+  </header>
+  <main id="app"></main>
+  <footer>Dados de datasheet digitalizados a partir de curvas típicas (aproximados). Custos são faixas de referência — conferir em Mouser, DigiKey ou lojas nacionais.</footer>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
