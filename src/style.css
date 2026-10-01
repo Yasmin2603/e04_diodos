@@ -304,3 +304,5 @@ body[data-dev='foto'] { --on-accent: #1a0f05; }
 .kpis { display: grid; grid-template-columns: repeat(5, 1fr); }
 .kpis:has(> :nth-child(6)) { grid-template-columns: repeat(3, 1fr); }
 @media (max-width: 760px) { .kpis, .kpis:has(> :nth-child(6)) { grid-template-columns: repeat(2, 1fr); } }
+footer p { margin: 0; }
+footer .grupo { color: var(--fg); font-weight: 600; margin-bottom: 8px; }
