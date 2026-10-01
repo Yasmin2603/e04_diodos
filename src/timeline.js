@@ -1,7 +1,7 @@
 // Linha do tempo interativa dos criadores
 const NISHIZAWA = 'https://upload.wikimedia.org/wikipedia/commons/6/6f/Junichi_Nishizawa.jpg';
 const EVENTS = [
-  { ano: 1940, nome: 'Russell Ohl', ini: 'RO', foto: '/criadores/ohl.jpg', org: 'Bell Labs · EUA',
+  { ano: 1940, nome: 'Russell Ohl', ini: 'RO', foto: 'criadores/ohl.jpg', org: 'Bell Labs · EUA',
     feito: 'Efeito fotovoltaico na junção PN',
     texto: 'Ao estudar um cristal de silício com uma trinca, Ohl notou que ele gerava tensão sob luz. Era a primeira junção PN — base de toda célula solar e fotodiodo.' },
   { ano: 1950, nome: 'Jun-ichi Nishizawa', ini: 'JN', foto: NISHIZAWA, org: 'Universidade de Tohoku · Japão',
